@@ -1,0 +1,166 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/LoginPage/LoginPage",
+			"style": {
+				"navigationBarTitleText": "湖北交投桥梁定检现场检测",
+				"navigationBarBackgroundColor": "#0F4687",
+				"backgroundColor": "#FFFFFF",
+				"app-plus": {
+					"titleNView": {}
+				}
+			}
+		},
+
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "湖北交投桥梁定检现场检测",
+				"navigationBarBackgroundColor": "#0F4687",
+				"navigationStyle": "custom",
+				"backgroundColor": "#FFFFFF",
+				"app-plus": {
+					"titleNView": {}
+				}
+			}
+		},
+		{
+			"path": "pages/bridge/bridge",
+			"style": {
+				"navigationBarTitleText": "湖北交投桥梁定检现场检测",
+				"navigationBarBackgroundColor": "#0F4687",
+				"backgroundColor": "#FFFFFF",
+				"app-plus": {
+					"titleNView": {}
+				}
+			}
+
+		},
+		{
+			"path": "pages/List/List",
+			"style": {
+				"navigationBarTitleText": "桥梁定期检查项目列表",
+				"navigationBarBackgroundColor": "#0F4687",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+
+		{
+			"path": "pages/bridge-disease/bridge-disease",
+			"style": {
+				"navigationBarTitleText": "桥梁与病害信息",
+				"navigationBarBackgroundColor": "#0F4687",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": {}
+				}
+			}
+		},
+		{
+			"path": "pages/add-disease/add-disease",
+			"style": {
+				"navigationBarTitleText": "新增病害",
+				"navigationBarBackgroundColor": "#0F4687",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": {}
+				}
+			}
+		},
+		{
+			"path": "pages/canvas/canvas",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#0F4687",
+				"navigationStyle": "custom", // ⬅️ 关闭原生导航栏
+				"screenOrientation": "landscape"
+				// "navigationBarLeftButtons": []
+			}
+		},
+		{
+			"path": "pages/SystemSetting/SystemSetting",
+			"style": {
+				"navigationBarTitleText": "系统设置",
+				"navigationBarBackgroundColor": "#0F4687",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {}
+				}
+			}
+		},
+		{
+			"path": "uni_modules/uni-upgrade-center-app/pages/upgrade-popup",
+			"style": {
+				"disableScroll": true,
+				"app-plus": {
+					"backgroundColorTop": "transparent",
+					"background": "transparent",
+					"titleNView": false,
+					"scrollIndicator": false,
+					"popGesture": "none",
+					"animationType": "fade-in",
+					"animationDuration": 200
+
+				}
+			}
+		},
+		{
+			"path": "components/myFilePicker/upload-image",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "components/myFilePicker/upload-file",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/ChatBot/ChatBot",
+			"style": {
+				"navigationBarTitleText": "智能助手",
+				"navigationBarBackgroundColor": "#0F4687"
+			}
+		},
+		{
+			"path" : "pages/online-information/online-information",
+			"style" : 
+			{
+				"navigationBarTitleText" : "桥梁与病害在线信息",
+				"navigationBarBackgroundColor": "#0F4687",
+				"app-plus": {
+					"titleNView": {}
+				}
+			}
+		},
+		{
+			"path" : "pages/add-bridge/add-bridge",
+			"style" : 
+			{
+				"navigationBarTitleText" : "新建桥梁",
+				"navigationBarBackgroundColor": "#0F4687"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"titleNView": {
+				"titleColor": "#ffffff"
+			}
+		}
+	},
+	"uniIdRouter": {}
+}

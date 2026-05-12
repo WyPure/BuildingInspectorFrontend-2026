@@ -1,0 +1,172 @@
+
+.add-bridge[data-v-0e20e5d3] {
+    padding: 0.75rem 1rem;
+    background-color: #f7f8fa;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.add-bridge-item[data-v-0e20e5d3] {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0.4375rem;
+    background-color: #ffffff;
+    border-radius: 0.375rem;
+    margin-bottom: 0.25rem;
+}
+.add-bridge-item-title[data-v-0e20e5d3] {
+    width: 6.25rem;
+    font-size: 0.625rem;
+    color: #333333;
+    line-height: 1.2;
+}
+.add-bridge-item-input[data-v-0e20e5d3] {
+    flex: 1;
+    height: 1.375rem;
+    line-height: 1.375rem;
+    border: 0.03125rem solid #e5e6eb;
+    border-radius: 0.3125rem;
+    padding: 0 0.375rem;
+    font-size: 0.625rem;
+    color: #1d2129;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+.add-bridge-item-input[data-v-0e20e5d3]::-webkit-input-placeholder {
+    color: #c0c4cc;
+}
+.add-bridge-item-input[data-v-0e20e5d3]::placeholder {
+    color: #c0c4cc;
+}
+
+  /* 只读输入框的视觉禁用效果 */
+.add-bridge-item-input[readonly][data-v-0e20e5d3] {
+    background-color: #f5f7fa;
+    color: #8a8f99;
+    border-color: #e5e6eb;
+}
+.add-bridge-item-input[disabled][data-v-0e20e5d3] {
+    background-color: #f5f7fa;
+    color: #8a8f99;
+    border-color: #e5e6eb;
+}
+
+  /* 可搜索下拉选择样式 */
+.select-wrapper[data-v-0e20e5d3] {
+    position: relative;
+    flex: 1;
+}
+.dropdown[data-v-0e20e5d3] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.5625rem; /* 与输入框高度+间距对齐 */
+    background: #ffffff;
+    border: 0.03125rem solid #e5e6eb;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.1875rem 0.75rem rgba(0, 0, 0, 0.06);
+    z-index: 10;
+}
+.dropdown-search[data-v-0e20e5d3] {
+    padding: 0.5rem 0.5rem 0 0.5rem;
+}
+.dropdown-search-input[data-v-0e20e5d3] {
+    height: 1.25rem;
+    line-height: 1.25rem;
+    border: 0.03125rem solid #e5e6eb;
+    border-radius: 0.25rem;
+    padding: 0 0.375rem;
+    font-size: 0.5625rem;
+    background-color: #fff;
+}
+.dropdown-scroll[data-v-0e20e5d3] {
+    max-height: 6.875rem;
+}
+.dropdown-item[data-v-0e20e5d3] {
+    padding: 0.3125rem 0.4375rem;
+    font-size: 0.625rem;
+    color: #1d2129;
+    border-bottom: 0.03125rem solid #f2f3f5;
+}
+.dropdown-item[data-v-0e20e5d3]:last-child {
+    border-bottom-width: 0;
+}
+.dropdown-item[data-v-0e20e5d3]:active {
+    background-color: #f5f7fa;
+}
+.dropdown-empty[data-v-0e20e5d3] {
+    padding: 0.75rem;
+    font-size: 0.8125rem;
+    color: #8a8f99;
+    text-align: center;
+}
+
+  /* 遮罩用于点击空白处关闭下拉 */
+.overlay[data-v-0e20e5d3] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0);
+    z-index: 5;
+}
+
+  /* 确认按钮样式 */
+.confirm-btn[data-v-0e20e5d3] {
+    width: 100%;
+    height: 2.625rem;
+    line-height: 2.625rem;
+    margin-top: 0.75rem;
+    background: #1677ff;
+    color: #ffffff;
+    border-radius: 0.375rem;
+    font-size: 0.5rem;
+}
+.confirm-btn[data-v-0e20e5d3]:active {
+    background: #1463d6;
+}
+
+  /* 展示用的“输入框”外观（不可编辑） */
+.display-input[data-v-0e20e5d3] {
+    display: flex;
+    align-items: center;
+    color: #1d2129;
+}
+.display-input.is-placeholder[data-v-0e20e5d3] {
+    color: #cccccc;
+}
+
+  /* 按钮行与按钮样式 */
+.btn-row[data-v-0e20e5d3] {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+.btn[data-v-0e20e5d3] {
+    flex: 1;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    border-radius: 0.15625rem;
+    font-size: 0.5rem;
+    padding: 0 0.3125rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.btn-primary[data-v-0e20e5d3] {
+    background: #1677ff;
+    color: #ffffff;
+}
+.btn-primary[data-v-0e20e5d3]:active {
+    background: #1463d6;
+}
+.btn-ghost[data-v-0e20e5d3] {
+    background: #ffffff;
+    color: #1677ff;
+    border: 0.03125rem solid #1677ff;
+}
+.btn-ghost[data-v-0e20e5d3]:active {
+    background: #f0f6ff;
+}

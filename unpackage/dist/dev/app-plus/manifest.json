@@ -1,0 +1,143 @@
+{
+  "@platforms": [
+    "android",
+    "iPhone",
+    "iPad"
+  ],
+  "id": "__UNI__B200628",
+  "name": "湖北交投智能检测",
+  "version": {
+    "name": "2.0.260419.1",
+    "code": 226041901
+  },
+  "description": "",
+  "developer": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "permissions": {
+    "Camera": {},
+    "UniNView": {
+      "description": "UniNView原生渲染"
+    }
+  },
+  "plus": {
+    "useragent": {
+      "value": "uni-app",
+      "concatenate": true
+    },
+    "splashscreen": {
+      "target": "id:1",
+      "autoclose": true,
+      "waiting": true,
+      "delay": 0
+    },
+    "popGesture": "close",
+    "launchwebview": {
+      "render": "always",
+      "id": "1",
+      "kernel": "WKWebview"
+    },
+    "usingComponents": true,
+    "nvueStyleCompiler": "uni-app",
+    "compilerVersion": 3,
+    "distribute": {
+      "icons": {
+        "ios": {
+          "appstore": "",
+          "iphone": {
+            "app@2x": "static/icon/BIicon.png",
+            "app@3x": "static/icon/BIicon.png",
+            "spotlight@2x": "static/icon/BIicon.png",
+            "spotlight@3x": "static/icon/BIicon.png",
+            "settings@2x": "static/icon/BIicon.png",
+            "settings@3x": "static/icon/BIicon.png",
+            "notification@2x": "static/icon/BIicon.png",
+            "notification@3x": "static/icon/BIicon.png"
+          },
+          "ipad": {
+            "app": "static/icon/BIicon.png",
+            "app@2x": "static/icon/BIicon.png",
+            "proapp@2x": "static/icon/BIicon.png",
+            "spotlight": "static/icon/BIicon.png",
+            "spotlight@2x": "static/icon/BIicon.png",
+            "settings": "static/icon/BIicon.png",
+            "settings@2x": "static/icon/BIicon.png",
+            "notification": "static/icon/BIicon.png",
+            "notification@2x": "static/icon/BIicon.png"
+          }
+        },
+        "android": {
+          "ldpi": "static/icon/BIicon.png",
+          "mdpi": "static/icon/BIicon.png",
+          "hdpi": "static/icon/BIicon.png",
+          "xhdpi": "static/icon/BIicon.png",
+          "xxhdpi": "static/icon/BIicon.png",
+          "xxxhdpi": "static/icon/BIicon.png"
+        }
+      },
+      "google": {
+        "permissions": [
+          "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>"
+        ],
+        "minSdkVersion": 21,
+        "abiFilters": [
+          "armeabi-v7a",
+          "arm64-v8a"
+        ],
+        "targetSdkVersion": 30,
+        "usesCleartextTraffic": true
+      },
+      "apple": {
+        "dSYMs": false,
+        "privacyDescription": {
+          "NSCameraUsageDescription": "需要使用相机进行拍摄"
+        }
+      },
+      "plugins": {
+        "audio": {
+          "mp3": {
+            "description": "Android平台录音支持MP3格式文件"
+          }
+        }
+      }
+    },
+    "statusbar": {
+      "immersed": "supportedDevice",
+      "style": "light",
+      "background": "#F8F8F8"
+    },
+    "uniStatistics": {
+      "enable": false
+    },
+    "allowsInlineMediaPlayback": true,
+    "uni-app": {
+      "control": "uni-v3",
+      "vueVersion": "3",
+      "compilerVersion": "5.05",
+      "nvueCompiler": "uni-app",
+      "renderer": "auto",
+      "nvue": {
+        "flex-direction": "column"
+      },
+      "nvueLaunchMode": "normal",
+      "webView": {
+        "minUserAgentVersion": "49.0"
+      }
+    }
+  },
+  "app-harmony": {
+    "useragent": {
+      "value": "uni-app",
+      "concatenate": true
+    },
+    "uniStatistics": {
+      "enable": false
+    }
+  },
+  "launch_path": "__uniappview.html"
+}

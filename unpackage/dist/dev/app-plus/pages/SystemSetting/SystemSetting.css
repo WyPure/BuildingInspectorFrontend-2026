@@ -1,0 +1,698 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.uni-popup[data-v-4dd3c44b] {
+  position: fixed;
+  z-index: 99;
+}
+.uni-popup.top[data-v-4dd3c44b], .uni-popup.left[data-v-4dd3c44b], .uni-popup.right[data-v-4dd3c44b] {
+  top: 0;
+}
+.uni-popup .uni-popup__wrapper[data-v-4dd3c44b] {
+  display: block;
+  position: relative;
+  /* iphonex 等安全区设置，底部安全区适配 */
+}
+.uni-popup .uni-popup__wrapper.left[data-v-4dd3c44b], .uni-popup .uni-popup__wrapper.right[data-v-4dd3c44b] {
+  padding-top: 0;
+  flex: 1;
+}
+.fixforpc-z-index[data-v-4dd3c44b] {
+  z-index: 999;
+}
+.fixforpc-top[data-v-4dd3c44b] {
+  top: 0;
+}
+
+	/* 容器样式 */
+.container[data-v-d65fdfd8] {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 9999;
+}
+
+	/* 弹窗样式 */
+.window[data-v-d65fdfd8] {
+		width: 13.3125rem;
+		height: 10rem;
+		background-color: #FFFFFF;
+		border-radius: 0.5rem;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.15);
+}
+
+	/* 标题栏样式 */
+.title[data-v-d65fdfd8] {
+		height: 2.1875rem;
+		background-color: #BDCBE0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 0.625rem;
+		color: #0F4687;
+		font-weight: bold;
+		letter-spacing: 0.03125rem;
+}
+
+	/* 内容区域样式 */
+.content[data-v-d65fdfd8] {
+		flex: 1;
+		padding: 0.9375rem;
+		font-size: 0.5rem;
+		color: #333333;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		background-color: #f8fafd;
+		line-height: 1.6;
+}
+
+	/* 按钮容器样式 */
+.button-container[data-v-d65fdfd8] {
+		display: flex;
+		justify-content: space-around;
+		padding: 0.625rem;
+		background-color: #FFFFFF;
+		border-top: 0.03125rem solid #eeeeee;
+}
+
+	/* 按钮基础样式 */
+.btn[data-v-d65fdfd8] {
+		width: 5rem;
+		height: 1.25rem;
+		line-height: 1.25rem;
+		border-radius: 0.15625rem;
+		font-size: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.3s;
+		border: none;
+		margin: 0;
+		padding: 0 0.3125rem;
+		box-sizing: border-box;
+}
+
+	/* 取消按钮样式 */
+.cancel[data-v-d65fdfd8] {
+		background-color: #FFFFFF;
+		color: #1677FF;
+		border: 0.03125rem solid #1677FF;
+}
+.cancel[data-v-d65fdfd8]:active {
+		background-color: #f0f7ff;
+}
+
+	/* 确定按钮样式 */
+.confirm[data-v-d65fdfd8] {
+		background-color: #1677FF;
+		color: #FFFFFF;
+}
+.confirm[data-v-d65fdfd8]:active {
+		background-color: #0d5fd0;
+}
+
+	/* 手机端适配 */
+@media (max-width: 767px) {
+.window[data-v-d65fdfd8] {
+			width: 16.875rem;
+			height: 13.125rem;
+}
+.title[data-v-d65fdfd8] {
+			height: 2.5rem;
+			font-size: 0.8125rem;
+}
+.content[data-v-d65fdfd8] {
+			font-size: 0.75rem;
+}
+.btn[data-v-d65fdfd8] {
+			width: 6.25rem;
+			height: 1.25rem;
+			line-height: 1.25rem;
+			font-size: 0.5rem;
+			padding: 0 0.3125rem;
+			box-sizing: border-box;
+}
+}
+
+
+/* 容器样式 */
+.container[data-v-266a2a73] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+/* 弹窗样式 */
+.window[data-v-266a2a73] {
+  width: 13.3125rem;
+  height: 10rem;
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.15);
+}
+
+/* 标题栏样式 */
+.title[data-v-266a2a73] {
+  height: 2.1875rem;
+  background-color: #BDCBE0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.625rem;
+  color: #0F4687;
+  font-weight: bold;
+  letter-spacing: 0.03125rem;
+}
+
+/* 内容区域样式 */
+.content[data-v-266a2a73] {
+  flex: 1;
+  padding: 0.9375rem;
+  font-size: 0.75rem;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f8fafd;
+  line-height: 1.6;
+}
+
+/* 按钮容器样式 */
+.button-container[data-v-266a2a73] {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.625rem;
+  background-color: #FFFFFF;
+  border-top: 0.03125rem solid #eeeeee;
+}
+
+/* 按钮基础样式 */
+.btn[data-v-266a2a73] {
+  width: 5rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  border-radius: 0.15625rem;
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  border: none;
+  margin: 0;
+  padding: 0 0.3125rem;
+  box-sizing: border-box;
+}
+.cancel[data-v-266a2a73]:active {
+  background-color: #f0f7ff;
+}
+
+/* 确定按钮样式 */
+.confirm[data-v-266a2a73] {
+  background-color: #1677FF;
+  color: #FFFFFF;
+}
+.confirm[data-v-266a2a73]:active {
+  background-color: #0d5fd0;
+}
+
+
+/* 容器样式 */
+.container[data-v-09a83e56] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+/* 弹窗样式 */
+.window[data-v-09a83e56] {
+  width: 13.3125rem;
+  height: 10rem;
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.15);
+}
+
+/* 标题栏样式 */
+.title[data-v-09a83e56] {
+  height: 2.1875rem;
+  background-color: #BDCBE0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.625rem;
+  color: #0F4687;
+  font-weight: bold;
+  letter-spacing: 0.03125rem;
+}
+
+/* 内容区域样式 */
+.content[data-v-09a83e56] {
+  flex: 1;
+  padding: 0.9375rem;
+  font-size: 0.75rem;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f8fafd;
+  line-height: 1.6;
+}
+
+/* 按钮容器样式 */
+.button-container[data-v-09a83e56] {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.625rem;
+  background-color: #FFFFFF;
+  border-top: 0.03125rem solid #eeeeee;
+}
+
+/* 按钮基础样式 */
+.btn[data-v-09a83e56] {
+  width: 5rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  border-radius: 0.15625rem;
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  border: none;
+  margin: 0;
+  padding: 0 0.3125rem;
+  box-sizing: border-box;
+}
+.cancel[data-v-09a83e56]:active {
+  background-color: #f0f7ff;
+}
+
+/* 确定按钮样式 */
+.confirm[data-v-09a83e56] {
+  background-color: #1677FF;
+  color: #FFFFFF;
+}
+.confirm[data-v-09a83e56]:active {
+  background-color: #0d5fd0;
+}
+
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 列表行高（略矮，与原型 1200:176「扁横条」观感一致的是资料区相对更舒展，而非把顶栏压死） */
+.System[data-v-524e171a] {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+/* 资料区：在原先约 24+80+26rpx 量级上整体加高约 1/4 */
+.profile-card[data-v-524e171a] {
+  background: #bdcbed;
+  box-sizing: border-box;
+  min-height: 5.09375rem;
+  padding: 0.9375rem 0.75rem 1.03125rem;
+  border-bottom: 0.03125rem solid rgba(15, 70, 135, 0.06);
+  display: flex;
+  align-items: center;
+}
+.profile-inner[data-v-524e171a] {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  min-width: 0;
+}
+
+/* 头像框 ≈ 2×「修改密码」按钮高度(40rpx) */
+.avatar-wrap[data-v-524e171a] {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #fff;
+  border-radius: 0.1875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.avatar[data-v-524e171a] {
+  width: 1.8125rem;
+  height: 1.8125rem;
+}
+.profile-text[data-v-524e171a] {
+  flex: 1;
+  min-width: 0;
+  margin-left: 0.5625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.profile-account[data-v-524e171a] {
+  font-size: 0.4375rem;
+  color: #333;
+  font-weight: 500;
+}
+.profile-name[data-v-524e171a] {
+  font-size: 0.375rem;
+  color: #888;
+}
+.profile-actions[data-v-524e171a] {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.25rem;
+  flex-shrink: 0;
+  margin-left: 0.3125rem;
+}
+.profile-btn[data-v-524e171a] {
+  height: 1.25rem;
+  line-height: 1.25rem;
+  padding: 0 0.3125rem;
+  margin: 0;
+  font-size: 0.5rem;
+  color: #fff;
+  background: #0f4687;
+  border-radius: 0.15625rem;
+  border: none;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-btn[data-v-524e171a]::after {
+  border: none;
+}
+.profile-btn-hover[data-v-524e171a] {
+  opacity: 0.88;
+}
+.setting-list[data-v-524e171a] {
+  flex: 1;
+  background: #fff;
+  padding: 0.375rem 0.75rem 0;
+  padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));
+}
+
+/* 所有列表行（含仅展示时间的行）栏高一致 */
+.setting-row[data-v-524e171a] {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 2rem;
+  min-height: 2rem;
+  max-height: 2rem;
+  padding: 0;
+  box-sizing: border-box;
+  border-bottom: 0.03125rem solid #e8e8e8;
+}
+
+/* 版本号/数量与按钮同一侧，文本靠右贴近按钮 */
+.setting-row--action .setting-label[data-v-524e171a] {
+  flex-shrink: 0;
+}
+.setting-row__tail[data-v-524e171a] {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.3125rem;
+  padding-left: 0.25rem;
+}
+.setting-row--action .setting-value[data-v-524e171a] {
+  flex: 0 1 auto;
+  max-width: 52%;
+  text-align: right;
+  padding: 0;
+}
+.setting-row--last[data-v-524e171a] {
+  border-bottom: none;
+}
+.setting-row--time .setting-label[data-v-524e171a] {
+  width: auto;
+  flex: 0 1 auto;
+  max-width: 56%;
+  line-height: 1.25;
+}
+.setting-row--time .setting-value--right[data-v-524e171a] {
+  flex: 1;
+  min-width: 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.setting-label[data-v-524e171a] {
+  font-size: 0.5625rem;
+  color: #666666;
+  width: 7.75rem;
+  flex-shrink: 0;
+  line-height: 1.25;
+}
+.setting-value[data-v-524e171a] {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.5625rem;
+  color: #666666;
+  text-align: center;
+  padding: 0 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.setting-value--right[data-v-524e171a] {
+  text-align: right;
+  font-size: 0.5625rem;
+  color: #666666;
+}
+.row-action[data-v-524e171a] {
+  flex-shrink: 0;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  padding: 0 0.3125rem;
+  margin: 0;
+  font-size: 0.5rem;
+  color: #fff;
+  background: #1677ff;
+  border-radius: 0.15625rem;
+  border: none;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row-action[data-v-524e171a]::after {
+  border: none !important;
+}
+.row-action-hover[data-v-524e171a] {
+  opacity: 0.9;
+}
+@media (max-width: 599px) {
+.setting-label[data-v-524e171a],
+.setting-value[data-v-524e171a],
+.setting-value--right[data-v-524e171a] {
+    font-size: 0.625rem;
+}
+.setting-row[data-v-524e171a] {
+    height: 2.1875rem;
+    min-height: 2.1875rem;
+    max-height: 2.1875rem;
+}
+}
+.password-popup-content[data-v-524e171a] {
+  background-color: #fff;
+  padding: 0;
+  width: 15.625rem;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+}
+.popup-title[data-v-524e171a] {
+  font-size: 0.625rem;
+  text-align: center;
+  color: #333;
+  background-color: #BDCBE0;
+  height: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.password-form[data-v-524e171a] {
+  padding: 0.625rem;
+}
+.password-row[data-v-524e171a] {
+  margin-bottom: 0.625rem;
+  display: flex;
+  flex-direction: column;
+}
+.password-label[data-v-524e171a] {
+  font-size: 0.625rem;
+  color: #666;
+  margin-bottom: 0.3125rem;
+}
+.password-input[data-v-524e171a] {
+  border: 1px solid #ddd;
+  border-radius: 0.15625rem;
+  height: 1.875rem;
+  padding: 0 0.3125rem;
+  font-size: 0.625rem;
+}
+.popup-buttons[data-v-524e171a] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.625rem;
+  border-top: 1px solid #eee;
+  box-sizing: border-box;
+}
+.popup-btn[data-v-524e171a] {
+  flex: 1;
+  min-width: 0;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  border-radius: 0.15625rem;
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.3125rem;
+  box-sizing: border-box;
+}
+.cancel-btn[data-v-524e171a] {
+  background-color: #f5f5f5;
+  color: #333;
+}
+.confirm-btn[data-v-524e171a] {
+  background-color: #1677ff;
+  color: #fff;
+}
+
+/* 下载进度条样式 */
+.download-progress-container[data-v-524e171a] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+.progress-header[data-v-524e171a] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.progress-title[data-v-524e171a] {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.progress-percent[data-v-524e171a] {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1677ff;
+}
+.progress-bar-bg[data-v-524e171a] {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress-bar-fill[data-v-524e171a] {
+  height: 100%;
+  background-color: #1677ff;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+.progress-info[data-v-524e171a] {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}

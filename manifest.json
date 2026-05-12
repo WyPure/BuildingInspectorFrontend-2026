@@ -1,0 +1,124 @@
+{
+    "name" : "湖北交投智能检测",
+    "appid" : "__UNI__B200628",
+    "description" : "",
+    "versionName" : "2.0.260419.1",
+    "versionCode" : 226041901,
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {
+            "Camera" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>"
+                ],
+                "minSdkVersion" : 21,
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ],
+                "targetSdkVersion" : 30,
+                "usesCleartextTraffic" : true
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "dSYMs" : false,
+                "privacyDescription" : {
+                    "NSCameraUsageDescription" : "需要使用相机进行拍摄"
+                }
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {},
+            "icons" : {
+                //可选，JSON对象，应用图标相关配置
+                "ios" : {
+                    //可选，JSON对象，iOS平台图标配置 
+                    "appstore" : "", //必填，字符串类型，分辨率1024x1024, 提交app sotre使用的图标路径
+                    "iphone" : {
+                        //可选，JSON对象，iPhone设备图标配置
+                        "app@2x" : "static/icon/BIicon.png", //可选，字符串类型，分辨率120x120，程序图标路径  
+                        "app@3x" : "static/icon/BIicon.png", //可选，字符串类型，分辨率180x180，程序图标路径  
+                        "spotlight@2x" : "static/icon/BIicon.png", //可选，字符串类型，分辨率80x80，Spotlight搜索图标路径
+                        "spotlight@3x" : "static/icon/BIicon.png", //可选，字符串类型，分辨率120x120，Spotlight搜索图标路径
+                        "settings@2x" : "static/icon/BIicon.png", //可选，字符串类型，分辨率58x58，Settings设置图标路径
+                        "settings@3x" : "static/icon/BIicon.png", //可选，字符串类型，分辨率87x87，Settings设置图标路径
+                        "notification@2x" : "static/icon/BIicon.png", //可选，字符串类型，分辨率40x40，通知栏图标路径
+                        "notification@3x" : "static/icon/BIicon.png" //可选，字符串类型，分辨率60x60，通知栏图标路径
+                    },
+                    "ipad" : {
+                        //可选，JSON对象，iPad设备图标配置
+                        "app" : "static/icon/BIicon.png", //可选，字符串类型，分辨率76x76，程序图标图标路径
+                        "app@2x" : "static/icon/BIicon.png", //可选，字符串类型，分辨率152x152，程序图标图标路径
+                        "proapp@2x" : "static/icon/BIicon.png", //可选，字符串类型，分辨率167x167，程序图标图标路径
+                        "spotlight" : "static/icon/BIicon.png", //可选，字符串类型，分辨率40x40，Spotlight搜索图标路径
+                        "spotlight@2x" : "static/icon/BIicon.png", //可选，字符串类型，分辨率80x80，Spotlight搜索图标路径
+                        "settings" : "static/icon/BIicon.png", //可选，字符串类型，分辨率29x29，Settings设置图标路径
+                        "settings@2x" : "static/icon/BIicon.png", //可选，字符串类型，分辨率58x58，Settings设置图标路径
+                        "notification" : "static/icon/BIicon.png", //可选，字符串类型，分辨率20x20，通知栏图标路径
+                        "notification@2x" : "static/icon/BIicon.png" //可选，字符串类型，分辨率740x40，通知栏图标路径
+                    }
+                },
+                "android" : {
+                    //可选，JSON对象，Android平台图标配置
+                    "ldpi" : "static/icon/BIicon.png", //可选，字符串类型，普通屏设备程序图标，分辨率要求48x48，已废弃  
+                    "mdpi" : "static/icon/BIicon.png", //可选，字符串类型，大屏设备程序图标，分辨率要求48x48，已废弃  
+                    "hdpi" : "static/icon/BIicon.png", //可选，字符串类型，高分屏设备程序图标，分辨率要求72x72
+                    "xhdpi" : "static/icon/BIicon.png", //可选，字符串类型，720P高分屏设备程序图标，分辨率要求96x96
+                    "xxhdpi" : "static/icon/BIicon.png", //可选，字符串类型，1080P高分屏设备程序图标，分辨率要求144x144
+                    "xxxhdpi" : "static/icon/BIicon.png" //可选，字符串类型，2K屏设备程序图标，分辨率要求192x192
+                }
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "vueVersion" : "3"
+}
+/* ios打包配置 *//* SDK配置 *///可选，JSON对象，应用图标相关配置
+//可选，JSON对象，iOS平台图标配置 
+//必填，字符串类型，分辨率1024x1024, 提交app sotre使用的图标路径
+//可选，JSON对象，iPhone设备图标配置
+//可选，字符串类型，分辨率120x120，程序图标路径  
+//可选，字符串类型，分辨率180x180，程序图标路径  
+//可选，字符串类型，分辨率80x80，Spotlight搜索图标路径
+//可选，字符串类型，分辨率120x120，Spotlight搜索图标路径
+//可选，字符串类型，分辨率58x58，Settings设置图标路径
+//可选，字符串类型，分辨率87x87，Settings设置图标路径
+//可选，字符串类型，分辨率40x40，通知栏图标路径
+//可选，字符串类型，分辨率60x60，通知栏图标路径
+
