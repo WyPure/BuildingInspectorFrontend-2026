@@ -2,8 +2,8 @@
 import { reactive } from 'vue';
 
 const apiConfig = reactive({
-  // baseURL: "http://59.110.81.142:8090", // 基础URL
-  baseURL: "http://60.205.13.156:8090",
+  // baseURL: "http://59.110.81.142:8090", // 服务器基础URL
+  baseURL: "http://60.205.13.156:8090", //测试服务器URL
   botURL: "http://59.110.81.142:8081",
   endpoints: {
     login: "/jwt/login",
